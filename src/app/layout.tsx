@@ -16,10 +16,10 @@ const montserrat = Montserrat({
 
 
 export const metadata: Metadata = {
-  title: "Vinayak Jain | Portfolio (Cyber-Minimalist Edition)",
-  description: "Systems Architect & Creative Developer portfolio of Vinayak Jain, engineering high-performance infrastructure.",
+  title: "Vinayak Jain | Built to scale. Driven to build.",
+  description: "Systems Architect & Creative Developer , engineering high-performance infrastructure.",
   icons: {
-    icon: "/icon.svg",
+    icon: "http://www.w3.org/2000/svg",
   },
 };
 
