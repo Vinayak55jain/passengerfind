@@ -1,26 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #adc6ff;
+  --color-on-primary: #002e6a;
+  --color-secondary: #d0bcff;
+  --color-tertiary: #3cddc7;
+  --color-background: #0D0D0D;
+  --color-surface: #10131a;
+  --color-surface-container: #1d2027;
+  --color-surface-container-high: #272a31;
+  --color-surface-container-low: #191b23;
+  --color-on-surface: #e1e2ec;
+  --color-on-surface-variant: #c2c6d6;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-outline: #8c909f;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* NOTE: @theme vars are build-time only — we cannot reference runtime CSS vars here.
+   * Font-family is applied directly on html/body below instead. */
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0D0D0D;
+  --foreground: #e1e2ec;
+
+  --font-linkedin: -apple-system,
+                   BlinkMacSystemFont,
+                   "Segoe UI",
+                   Roboto,
+                   "Helvetica Neue",
+                   Helvetica,
+                   Arial,
+                   sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-anton {
+  font-family: 'Geist', sans-serif !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  /* Apply Geist as the default heading/display font */
+  font-family: 'Geist', sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0D0D0D;
+  color: #e1e2ec;
+  scroll-behavior: smooth;
+  /* Apply Geist as the default body font — overrides html */
+  font-family: 'Geist', sans-serif;
+}
+
+/* Utility classes — use these directly on elements or via className */
+
+
+.font-montserrat {
+  font-family: 'Geist', sans-serif !important;
+}
+
+.aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(120px);
+  opacity: 0.15;
+  pointer-events: none;
+  background: radial-gradient(circle at 20% 30%, #22d3ee 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, #8b5cf6 0%, transparent 60%);
+}
+
+/* Text Pressure Effect */
+.text-pressure {
+  font-variation-settings: 'wght' 700;
+  transition: font-variation-settings 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.text-pressure:hover {
+  font-variation-settings: 'wght' 900;
+  letter-spacing: -0.02em;
+}
+
+/* Shiny Text CTA */
+.shiny-text {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 70%);
+  background-size: 200% 100%;
+  animation: shine 4s infinite linear;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* Bento Grid */
+.yolo-bento {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(80px, auto);
+  gap: 24px;
+}
+
+.bento-card {
+  background: #10131a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  padding: 32px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(173, 198, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Swap Logic */
+.card-swap-container {
+  perspective: 1000px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.card-swap-item {
+  position: absolute;
+  inset: 0;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-swap-item.hidden-card {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  pointer-events: none;
+}
+
+/* Scroll Velocity */
+.velocity-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 60px 0;
+  background: transparent;
+  margin: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.velocity-track {
+  display: inline-block;
+  animation: velocity-scroll 30s linear infinite;
+}
+
+@keyframes velocity-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-title-mask {
+  background: linear-gradient(to bottom, #ffffff 30%, #adc6ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
