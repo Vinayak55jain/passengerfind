@@ -73,7 +73,7 @@ body {
   filter: blur(120px);
   opacity: 0.15;
   pointer-events: none;
-  background: radial-gradient(circle at 20% 30%, #22d3ee 0%, transparent 50%),
+  background: radial-gradient(circle at 20% 30%, #08b7e8 0%, transparent 60%),
     radial-gradient(circle at 80% 70%, #8b5cf6 0%, transparent 60%);
 }
 
