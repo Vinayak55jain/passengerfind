@@ -99,7 +99,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <p className="font-montserrat text-[9px] text-on-surface-variant/30 uppercase tracking-[0.2em]">
             {" "}
-            © 2024 VINAYAK JAIN / PORTFOLIO
+            © 2026 VINAYAK JAIN / PORTFOLIO
           </p>
         </div>
 

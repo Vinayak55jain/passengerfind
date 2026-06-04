@@ -31,16 +31,16 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative z-10 flex flex-col gap-1 text-left">
-                <span className="font-montserrat text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70">
+              <div className="relative z-10 flex flex-col gap-2 text-left">
+                <span className="font-montserrat text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70 leading-relaxed">
                   Direct Communication
                 </span>
-                <span className="font-anton text-2xl md:text-3xl font-bold tracking-tighter text-white">
-                vinayakjainlife@gmail.com
+                <span className="font-anton text-xl sm:text-2xl md:text-3xl font-bold tracking-tighter text-white break-all leading-tight">
+                  vinayakjainlife@gmail.com
                 </span>
-                  <p className="font-montserrat text-[10px] font- uppercase tracking-[0.1em] text-white/70">
-               The window is open. Make the leap.
-          </p>
+                <p className="font-montserrat text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-white/70 leading-relaxed">
+                  The window is open. Make the leap.
+                </p>
               </div>
               <div className="relative z-10 flex items-center justify-center size-12 rounded-full bg-white/10 border border-white/20 text-white group-hover:translate-x-2 transition-transform duration-500">
                 <span className="material-symbols-outlined">arrow_forward</span>

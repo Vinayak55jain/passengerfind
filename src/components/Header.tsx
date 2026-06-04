@@ -14,7 +14,9 @@ export default function Header() {
               ></path>
             </svg>
           </div>
-          <h2 className="font-anton text-sm font-bold tracking-widest text-on-surface uppercase">Vinayak Jain</h2>
+          <h2 className="font-anton text-sm font-bold tracking-widest text-on-surface uppercase" style={{ fontFamily: "Greenback, serif" }}>
+            Vinayak<span className="text-[#adc6ff] font-montserrat  text-lg" >11</span>Dev
+          </h2>
         </div>
         <div className="hidden md:flex flex-1 justify-center gap-18">
           <a
