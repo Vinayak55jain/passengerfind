@@ -59,7 +59,6 @@ export default function Home() {
             <Skills />
             <Exploring />
             <Insights />
-             <SystemArchitecture />
             <Contact />
           </div>
         </main>
