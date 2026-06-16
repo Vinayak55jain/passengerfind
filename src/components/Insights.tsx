@@ -1,6 +1,6 @@
 const articles = [
   {
-    date: "3 Days Ago",
+    date: "3 Weeks Ago",
     title: "Everyone talks about AI. Few talk about the infrastructure powering it.",
     desc: "AI grabs the headlines, but distributed systems do the heavy lifting. A look at the architectures that power modern intelligent applications.",
     link: "https://www.linkedin.com/posts/vinayakjain03_systemdesign-backendengineering-distributedsystems-ugcPost-7412796647035985920-QOYF/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEf5XncBBsINRGWPZmODY07rM4ZXS-5Al6k",
@@ -10,7 +10,7 @@ const articles = [
   },
   {
   
-  date: "3 Weeks Ago",
+  date: "1 Month Ago",
   title: "The Hidden Reason Production Systems Fail Under Load ",
   desc: "Most outages aren't caused by broken code—they're caused by exhausted resources. Explore how pool saturation, retry storms, and dependency isolation shape the reliability of modern backend systems.",
 
@@ -21,7 +21,7 @@ const articles = [
   },
   {
    
-  date: "2 Weeks Ago",
+  date: "1 Month Ago",
   title: "The Scaling Trick Behind Netflix's Distributed Databases ",
   desc: "What happens when new database nodes are added to a system serving millions of users? Consistent hashing ensures only a fraction of data moves, enabling predictable scaling and high availability.",
 

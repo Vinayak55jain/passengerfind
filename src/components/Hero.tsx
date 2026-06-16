@@ -54,7 +54,7 @@ export default function Hero() {
         <div className="flex flex-col h-full justify-between">
           <div className="mb-12">
             <span className="font-montserrat text-primary font-bold text-[10px] tracking-[0.4em] uppercase block mb-4">
-              SYSTEM ARCHITECT &amp; CREATIVE DEVELOPER
+             CURIOUS BY NATURE • BUILDER BY CHOICE
             </span>
             <h2 className="font-anton text-xl md:text-2xl font-bold uppercase text-primary/80 tracking-[0.2em] opacity-80">
               VINAYAK JAIN
@@ -62,14 +62,14 @@ export default function Hero() {
           </div>
           <div className="max-w-3xl flex-grow flex flex-col justify-center">
             <h1 className="font-anton text-5xl md:text-6xl lg:text-[76px] font-black leading-[1.05] tracking-tighter mb-8 hero-title-mask">
-            BULIDING DIGITIAL
+            EVERY DISCOVERY
               <br />
-              HIGH-FIDELITY
+              STARTS WITH
               <br />
-              INFRASTURCTURE
+              A QUESTION
             </h1>
             <p className="font-montserrat text-sm md:text-base text-on-surface-variant max-w-xl mb-12 leading-relaxed uppercase opacity-70">
-              Engineering high-performance microservices with a Sahara-inspired minimalist aesthetic.
+              Exploring technology, embracing challenges, and building solutions that turn ideas into reality.
             </p>
           </div>
           <div className="flex flex-wrap gap-4 mt-auto">
@@ -93,9 +93,7 @@ export default function Hero() {
       >
         <div className="flex-1 flex flex-col justify-center py-4">
           <p className="font-montserrat text-xl md:text-2xl text-on-surface leading-snug">
-            B.Tech student at <span className="text-primary font-bold">Thapar Institute</span>. Architecting
-            high-performance backends and <span className="italic">AI-integrated</span> infrastructure for the next
-            generation of scale.
+           <span className="text-primary font-bold">Passionate</span> about discovering new technologies, tackling challenges, and <span className="italic">building</span> solutions that matter.
           </p>
           <p className="font-montserrat mt-4 text-xs text-on-surface-variant uppercase tracking-wider opacity-60">
            The future belongs to those who build it.

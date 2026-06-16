@@ -16,11 +16,13 @@ export default function Footer() {
             <h2 className="font-anton text-lg font-bold tracking-[0.2em] text-on-surface uppercase">Vinayak Jain</h2>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-montserrat text-[10px] font-bold text-primary uppercase tracking-[0.3em]">
-              Principal Architect
+            <p className="font-montserrat text-[12px] font-bold text-primary uppercase tracking-[0.3em]">
+              Software Pioneer
             </p>
             <p className="font-montserrat text-xs text-on-surface-variant/40 uppercase tracking-widest leading-relaxed max-w-[240px]">
-              Building digital high-fidelity infrastructure with minimalist precision.
+              EVERY DISCOVERY
+              <br/> STARTS WITH
+              <br/> A QUESTION.
             </p>
           </div>
         </div>
